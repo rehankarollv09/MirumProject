@@ -2,7 +2,7 @@
 
 Welcome to the Mirum MovieList Web Application.
 
-- Clone obanj-vendor repo.
+- Clone mirum-movieList repo.
 - Run npm install to install all dependencies.
 - Use available scripts for further actions.
 
