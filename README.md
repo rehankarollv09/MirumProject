@@ -2,7 +2,7 @@
 
 Welcome to the Mirum MovieList Web Application.
 
-- Clone mirum-movieList repo.
+- Clone mirum Project repo.
 - Run npm install to install all dependencies.
 - Use available scripts for further actions.
 
