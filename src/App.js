@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import MovieCard from "./Component/movieCard";
+import { movieData } from "./constant";
+import React from "react";
+import "./App.css";
 function App() {
+  const movieList = movieData.movies;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="card__container">
+        {movieList &&
+          movieList.length > 0 &&
+          movieList.map((movie) => (
+            <MovieCard
+              posterUrl={movie.posterUrl}
+              title={movie.title}
+              actors={movie.actors}
+              key={movie.id}
+            />
+          ))}
+      </div>
     </div>
   );
 }
