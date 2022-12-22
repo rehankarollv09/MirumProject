@@ -1,4 +1,4 @@
-.card {
+.movieCard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,15 +8,20 @@
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   max-width: 350px;
 }
-.card .image__container {
+
+.movieCard .imageWrapper {
   width: 350px;
   height: auto;
   text-align: center;
   padding: 15px;
 }
-.card img {
+.movieCard .imageWrapper img {
   max-width: 100%;
 }
-.card .text {
+.movieCard .contentWrapper {
   padding: 0 20px 20px;
+}
+
+.movieCard .contentWrapper span {
+  font-weight: bold;
 }
